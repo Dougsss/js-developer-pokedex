@@ -36,6 +36,31 @@
             </button>
         </div>
     </section>
+<!-- --------------------------- -->
+    <span class="detailsCard">
+        <div class="topCard ${pokemon.type}">
+            <button class="outButton">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMJJREFUSEvdlcEJwlAMhr9e3EEEQXqoI3QLl9ANvLiBHaBreHQQL72JgnsogfdApcofaKD6znn/l/xJSEHwK4L1GQ1gBeyBpVBxB2yBo8WqFdyAmSCeQ85A6QHc008loZdY5YNp/x5gArTAJlkzaAVT4ADUjiF47v/XHpioiRvEMwQSYJ1sMXs8731QPlYQDrCsQy3KtoQ2OUNCx7SvwYPuwX8CrsDcsRwXYOHZVDs4DVAJkBOw8x4cQbc/RL0H4wU8ALeMKBlSozKnAAAAAElFTkSuQmCC" alt="out" />
+            </button>
+            <div class="NameNum">
+                <span class="number">#${pokemon.number}</span>
+                <span class="name">${pokemon.name}</span>
+            </div>
+            <ol class="types">
+                ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+            </ol>
+            <img src="${pokemon.photo}"
+                    alt="${pokemon.name}">
+        </div>
+        <div class="botCard">
+            <ol class="listCaracters">
+                <button class="caracters">${pokemon.pokeathlon-stat}</button>
+                <button class="caracters">${pokemon.characteristic}</button>
+                <button class="caracters">${pokemon.ability}</button>
+            </ol>
+        </div>
+    </span>
+<!-- --------------------------- -->
 
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>

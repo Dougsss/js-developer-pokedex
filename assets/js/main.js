@@ -5,6 +5,7 @@ const maxRecords = 151
 const limit = 10
 let offset = 0;
 
+/* Function para converter os dados vindos da Api em um card reduzido de cada pokemon */
 function convertPokemonToLi(pokemon) {
     return `
         <li class="pokemon ${pokemon.type}">
@@ -17,11 +18,18 @@ function convertPokemonToLi(pokemon) {
                 </ol>
 
                 <img src="${pokemon.photo}"
-                     alt="${pokemon.name}">
+                    alt="${pokemon.name}">
             </div>
         </li>
     `
-}
+};
+
+/* Function para abrir um card com detalhes dos pokemons */
+function convertCardDetails(pokemon) {
+    return`
+        
+    `
+};
 
 function loadPokemonItens(offset, limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
