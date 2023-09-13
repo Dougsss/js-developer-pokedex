@@ -14,8 +14,18 @@ body {
     background-color: #D71A0A;
 }
 
+.header {
+    display: flex
+
+}
+
 .title{
     font-family:'Pokemon Solid','Roboto', sans-serif;
+}
+
+.imgPokedex {
+    width: 4rem;
+    margin: .70rem
 }
 
 @media screen and (min-width: 992px) {
