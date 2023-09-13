@@ -78,6 +78,7 @@
     background-color: #f9aec7;
 }
 
+
 .card {
     display: flex;
     flex-direction: column;
@@ -143,8 +144,9 @@
     background: #fff;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    //align-items: center;
+    justify-content: center;
+    gap: 20%;
     border-radius: 1rem;
     padding: .25rem 1rem .25rem 1rem;
     margin: .25rem;
@@ -155,10 +157,10 @@
     transform: translateY(30px);
 }
 
-.detail .p {
-    margin: .25rem;
-    background: #ff0000;
+.detail .subTitles {
+    text-align: center;
 }
+
 
 .detail .types {
     padding: 0;
@@ -170,10 +172,28 @@
     color: #fff;
     padding: .25rem .5rem;
     margin: .50rem 0;
-    font-size: .625rem;
+    font-size: .75rem;
     border-radius: 1rem;
     filter: brightness(1.1);
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.detail .skills {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.detail .skills .skill {
+    padding: .25rem .5rem;
+    margin: .50rem 0;
+    font-size: .85rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+    color: #fff;
 }
 
 .pokemon img {

@@ -6,9 +6,8 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
     pokemon.number = pokeDetail.id
     pokemon.name = pokeDetail.name
 
-/*     const locations = pokeDetail.location.map((region) => region.location.name)
-
-    pokemon.locations = locations */
+    pokemon.skill  = pokeDetail.abilities.map((item) => item.ability.name)
+    //(item => '' + item.ability.name).toString()
 
     const types = pokeDetail.types.map((typeSlot) => typeSlot.type.name)
     const [type] = types
